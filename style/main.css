@@ -1,0 +1,333 @@
+/* font-family: 'Open Sans', sans-serif; body */
+/* font-family: 'Raleway', sans-serif; Headings, Call-to-actions, Header Navigation */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+nav {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  padding: 60px;
+}
+
+.nav {
+  width: 300px;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: space-between;
+  color: hsl(243, 87%, 12%);
+}
+
+.part1 img,
+.part2 .pic {
+  width: 45%;
+}
+
+.part1 {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  padding-bottom: 100px;
+}
+.discription h1 {
+  font-size: 2.3em;
+  color: hsl(243, 87%, 12%);
+}
+.discription > p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: hsl(243, 87%, 12%);
+  padding-right: 70px;
+}
+.part1-form {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.part1-form input.mail1 {
+  width: 300px;
+  padding: 18px 30px 10px;
+  border: 1px solid rgb(61, 60, 60);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+input.mail1::placeholder {
+  color: hsl(0, 0%, 75%);
+}
+.part1-email input.mail1:invalid {
+  border: 1px solid hsl(0deg 75% 50%);
+}
+.part1-email .mail1-message {
+  display: flex;
+  visibility: hidden;
+}
+input.mail1:invalid + label.mail1-message {
+  visibility: visible;
+  color: hsl(0deg 75% 50%);
+}
+.part1-form input[type="submit"] {
+  width: 35%;
+  padding: 15px 10px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px hsl(0deg 0% 0% / 30%);
+}
+
+.bg-mobile {
+  display: none;
+}
+
+.bg img {
+  width: 100%;
+  position: relative;
+  top: 30px;
+}
+
+.part2 {
+  padding: 60px 60px 150px 60px;
+  background-color: hsl(240deg 75% 98%);
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  width: 195px;
+  display: flex;
+  color: hsl(170, 45%, 43%);
+  flex-direction: column;
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+
+.arrow .img-arrow {
+  width: 25px;
+}
+.arrow:hover .img-arrow svg use.hov {
+  fill: hsl(170, 60%, 63%);
+}
+
+.arrow .underline {
+  background-color: hsl(170, 45%, 43%);
+  width: 95%;
+  height: 1px;
+  position: relative;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.founder {
+  background-color: hsl(0, 0%, 100%);
+  width: 60%;
+  padding: 45px;
+  box-shadow: 0 0px 20px hsl(0deg 0% 80%);
+}
+.founder > img {
+  width: 25px;
+}
+.founder > p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  padding-right: 10px;
+}
+.founder-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 225px;
+}
+.founder-info > img {
+  width: 50px;
+  border-radius: 50%;
+}
+.founder-info > p {
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: hsl(243, 87%, 12%);
+  font-size: 0.9em;
+}
+p > span {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.part3 {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(0, 0%, 100%);
+  padding: 80px 100px 70px 50px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.part3-text > h1 {
+  letter-spacing: 1px;
+  font-size: 2em;
+  margin-top: 0;
+}
+.part3-text > p {
+  width: 85%;
+  font-size: 1.1em;
+  color: hsl(240deg 75% 98% / 80%);
+}
+.part3-form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+}
+.part3-email {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: space-around;
+}
+.part3-form .part3-email input.mail2 {
+  width: -webkit-fill-available;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.part3-form .part3-email input.mail2:invalid {
+  border: 1px solid hsl(0deg 75% 50%);
+}
+.part3-form .part3-email input.mail2:invalid + .mail2-message {
+  visibility: visible;
+}
+.part3-form .part3-email label {
+  visibility: hidden;
+  display: flex;
+  color: hsl(240deg 75% 98% / 80%);
+}
+.part3-form input[type="submit"] {
+  width: fit-content;
+  padding: 20px;
+  word-spacing: 4px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px hsl(0deg 0% 0% / 30%);
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(240deg 75% 98% / 80%);
+  padding: 100px 50px 10px;
+}
+.footer-logo svg g path {
+  fill: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.col1 {
+  margin-bottom: 85px;
+}
+.phone {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.email {
+  width: 195px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.col2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2.5;
+}
+.col2 ul {
+  list-style-type: none;
+}
+.col3 {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto auto 30%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(224, 93%, 58%);
+}
+
+@media (min-width: 1000px) {
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(109, 142, 234);
+  }
+  .arrow:hover {
+    cursor: pointer;
+    color: hsl(170, 60%, 63%);
+  }
+  .arrow:hover .underline {
+    background-color: hsl(170, 60%, 63%);
+  }
+  .nav li:hover {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  .foot1 li:hover,
+  .foot2 li:hover {
+    cursor: pointer;
+    color: hsl(238, 22%, 44%);
+  }
+  .facebook,
+  .twitter,
+  .instagram:hover {
+    cursor: pointer;
+  }
+  .facebook:hover svg .st1 {
+    fill: rgb(109, 142, 234);
+  }
+  .twitter:hover svg .st1 {
+    fill: rgb(109, 142, 234);
+  }
+  .instagram:hover svg .st0 {
+    stroke: rgb(109, 142, 234);
+  }
+  .instagram:hover svg .st1 {
+    fill: rgb(109, 142, 234);
+  }
+}

@@ -1,0 +1,136 @@
+@media (max-width: 999px) {
+  nav {
+    padding: 20px 20px 60px 20px;
+  }
+  nav > img {
+    width: 100px;
+  }
+  .part1 {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 20px 100px;
+  }
+  .discription h1 {
+    font-size: 1.5em;
+    padding: 0px 4%;
+  }
+  .discription > p {
+    padding: 0 5%;
+    font-size: 0.8em;
+  }
+  .part1-form {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .part1-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .part1-form input.mail1 {
+    width: 100%;
+  }
+  .part1-email .mail1-message {
+    display: flex;
+    visibility: hidden;
+    color: hsl(0deg 75% 50%);
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+  .part1-form input[type="submit"] {
+    width: 295px;
+  }
+  .part1 img,
+  .part2 .pic {
+    width: 75%;
+  }
+  .bg {
+    display: none;
+  }
+  .bg-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .part2 {
+    padding: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .part2 .discription h1 {
+    font-size: 1em;
+    margin: 75px 0 25px;
+  }
+  .part2 > .discription > p {
+    text-align: left;
+    padding-left: 0;
+  }
+  .arrow {
+    margin: 25px auto 50px;
+  }
+  .founder {
+    width: auto;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 100px;
+  }
+  .founder p {
+    font-size: 0.7em;
+    text-align: left;
+    padding: 0;
+  }
+  .founder-info {
+    width: 180px;
+  }
+  .founder-info > img {
+    width: 35px;
+  }
+  .part3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px 100px;
+    height: auto;
+  }
+  .part3-text > h1 {
+    font-size: 1.1em;
+    margin-top: 50px;
+  }
+  .part3-text > p {
+    width: auto;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  .part3-form {
+    width: 85%;
+    padding: 0;
+    align-items: center;
+  }
+  .part3-email {
+    align-items: center;
+  }
+  .part3-form input[type="submit"] {
+    width: -webkit-fill-available;
+  }
+  footer {
+    padding: 100px 20px 20px 50px;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .col1 {
+    margin: 20px 0 50px;
+  }
+  .col2 {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+  .col2 ul {
+    padding: 0;
+  }
+  .col3 {
+    margin: auto auto 20px;
+  }
+}
